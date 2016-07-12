@@ -1,0 +1,46 @@
+allprojects {
+
+    repositories {
+        jcenter()
+        maven { url 'http://nexus.sayboy.com:8081/nexus/content/groups/public/' }
+    }
+
+    ext {
+        androidPlugin = 'com.android.tools.build:gradle:1.2.3'
+        minSdkVersion = 15
+        compileSdkVersion = 23
+        buildToolsVersion = '23.0.1'
+
+        versionCode = 1
+        versionName = "1.0.0"
+
+        androidDependenciesVersion = "23.1.0"
+        andcupDependenciesVersion = "1.0.0-SNAPSHOP"
+
+        rxDependenciesVersion = "1.1.0"
+        retrolambdaVersion = "3.2.4"
+        butterKnifeVersion = '7.0.1'
+
+        libsDependencies = [
+                rxJava     : "io.reactivex:rxjava:${rxDependenciesVersion}",
+                rxAndroid  : "io.reactivex:rxandroid:${rxDependenciesVersion}",
+                retrolambda: "me.tatarka:gradle-retrolambda:${retrolambdaVersion}",
+                butterKnife: "com.jakewharton:butterknife:${butterKnifeVersion}"
+        ]
+
+        androidDependencies = [
+                supportAnnotations : "com.android.support:support-annotations:${androidDependenciesVersion}",
+                supportV4          : "com.android.support:support-v4:${androidDependenciesVersion}",
+                supportRecyclerView: "com.android.support:recyclerview-v7:${androidDependenciesVersion}",
+                supportAppCompat   : "com.android.support:appcompat-v7:${androidDependenciesVersion}",
+                supportDesign      : "com.android.support:design:${androidDependenciesVersion}",
+        ]
+
+        andcupDependencies = [
+                andcupFramework: "com.andcup.android.framework:andcup-framework:${andcupDependenciesVersion}",
+                andcupEventBus : "com.andcup.android.eventbus:andcup-eventbus:${andcupDependenciesVersion}",
+                andcupDatabase : "com.andcup.android.database:andcup-database:${andcupDependenciesVersion}",
+                andcupBinding  : "com.andcup.android.binding:andcup-binding:${andcupDependenciesVersion}",
+        ]
+    }
+}

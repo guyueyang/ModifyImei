@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">QQ HD</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="item_imei">修改设备IMEI号码</string>
+    <string name="item_model">修改设备型号</string>
+    <string name="item_brand">修改品牌</string>
+    <string name="item_phone">修改手机号</string>
+    <string name="item_cache">清除应用数据1</string>
+    <string name="item_cache2">清除应用数据2</string>
+    <string name="item_cache3">关闭应用</string>
+    <string name="item_files">删除指定文件或者文件夹</string>
+    <string name="item_delete_files">删除应用读写的文件</string>
+    <string name="itme_files_data">删除根目录文件或者文件夹</string>
+
+    <string name="btn_action">一键操作</string>
+    <string name="btn_open">打开APP</string>
+    <string name="btn_imei">清空IMEI</string>
+    <string name="tip_files">请输入要删除的文件(一个文件一行)</string>
+
+    <string name="copy_success">拷贝 %s 成功</string>
+
+    <string name="random">留存</string>
+    <string name="historical_record">历史记录</string>
+
+</resources>

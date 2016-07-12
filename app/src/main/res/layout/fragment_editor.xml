@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_random"
+        android:text="@string/random"
+        android:padding="10dp"
+        android:visibility="visible"
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_historical_record"
+        android:text="@string/historical_record"
+        android:padding="10dp"
+        android:layout_below="@+id/cb_random"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_list"
+        android:layout_above="@+id/ll_btn"
+        android:layout_below="@+id/cb_historical_record"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/btn_action"
+                android:id="@+id/btn_action"
+                android:layout_weight="1.0"
+                />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btn_imei"
+            android:id="@+id/btn_imei"
+            android:layout_weight="1.0"
+            />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/btn_open"
+                android:id="@+id/btn_open"
+                android:layout_weight="1.0"
+                />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

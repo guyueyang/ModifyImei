@@ -1,0 +1,15 @@
+apply plugin: 'com.android.application'
+
+apply from: rootProject.file('buildsystem/andcup-android.gradle')
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+
+    compile ('com.andcup.android.framework:andcup-framework:0.0.4-SNAPSHOT'){
+        changing = true
+    }
+    compile 'com.chrisplus.rootmanager:library:2.0.4@aar'
+    compile 'org.apache.httpcomponents:httpcore:4.4.4'
+    provided files('XposedBridgeApi-20150213.jar')
+}
